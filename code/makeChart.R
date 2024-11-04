@@ -1,3 +1,5 @@
+## @knitr makeCharts
+
 library(stringr)
 ggplot(sdat,
        aes(x = weather_source, fill = female)) +

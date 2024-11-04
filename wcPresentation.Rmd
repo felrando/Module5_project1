@@ -3,7 +3,9 @@ title: "Weather Information Preferences"
 subtitle: "Report for the `r params$region` Region"
 author: "Author: UrMom"
 date: "`r format(Sys.Date(), '%A, %B, %d, %Y') `"
-output: html_document
+output: 
+  ioslides_presentation:
+    logo: images/sunstar.png
 params:
   region: 
     label: "Region"
@@ -13,9 +15,7 @@ params:
               "Middle Atlantic","Mountain", "New England", 
               "Pacific","South Atlantic", "West North Central",
               "West South Central"]
-
-
-
+              
 ---
 
 
@@ -31,13 +31,6 @@ knitr::read_chunk("code/setup.R")
 ```
 
 
-<center><hr>
-![](images/sunstar.png){width=50}
-![](images/sunstar.png){width=50}
-![](images/sunstar.png){width=50}
-![](images/sunstar.png){width=50}
-![](images/sunstar.png){width=50}
-<hr></center>
 
 
 
